@@ -1,0 +1,18 @@
+h1 {
+  font-size: 3vw;
+}
+
+.example {
+  background-color: gray;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 22pt;
+  margin: 10px 10px 10px 10px;
+}
+
+.number {
+  margin: 0px 20px 0px 20px;
+}

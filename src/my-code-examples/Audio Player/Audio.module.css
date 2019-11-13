@@ -1,0 +1,11 @@
+.track {
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 10px;
+  margin: 2px;
+  font-size: 20pt;
+}
+
+.selected {
+  background-color: darkgray;
+}

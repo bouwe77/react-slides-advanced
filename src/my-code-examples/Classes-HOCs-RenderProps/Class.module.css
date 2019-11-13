@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+}
+
+.number {
+  margin: 0px 30px 0px 30px;
+  background-color: Darkgrey;
+  width: 300px;
+  height: 50px;
+  font-size: 32pt;
+  text-align: center;
+  padding: 0px 10px 10px 10px;
+  overflow: hidden;
+}
+
+button {
+  width: 90px;
+}
+
+.search {
+  background: Darkgrey;
+  width: 200px;
+}
+
+.text {
+  width: 800px;
+  padding-left: 10px;
+}
+
+label {
+  margin-left: 30px;
+}

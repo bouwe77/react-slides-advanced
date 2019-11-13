@@ -1,0 +1,9 @@
+export const curious = "‍️🤔";
+export const wow = "😲";
+export const glad = "😃";
+export const victorious = "🥳";
+export const key = "🗝";
+export const coffin = "⚰️";
+export const door = "🚪";
+export const hurray = "🎉💯🏆";
+export const restart = "🆕";

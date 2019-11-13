@@ -1,0 +1,51 @@
+body {
+  background-color: #1c2125;
+  font-family: "Raleway", sans-serif;
+  margin: 20px;
+  color: White;
+}
+
+.app {
+  width: calc(100vw - 100px);
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+strong {
+  color: White;
+  text-shadow: 1px 0 White;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+a {
+  color: steelblue;
+}
+
+footer {
+  text-align: right;
+  position: fixed;
+  bottom: 0;
+  padding-left: calc(100vw - 260px);
+  padding-bottom: 10px;
+}
+
+footer span {
+  margin-right: 50px;
+}
+
+h1 {
+  color: White;
+  font-size: 6vw;
+}
+
+li {
+  color: White;
+}
+
+.content {
+  font-size: 3vw;
+  color: White;
+}
