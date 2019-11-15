@@ -1,10 +1,51 @@
-.box {
-  border: 1px solid Red;
-  margin: 5px;
-  padding: 5px;
+.app {
+  width: 600px;
 }
 
 h2 {
   display: inline;
   padding-right: 30px;
+}
+
+a {
+  color: White;
+}
+
+.logo {
+  color: yellowgreen;
+  margin-right: 400px;
+}
+
+.count {
+  color: yellowgreen;
+}
+
+.product {
+  background: lightgray;
+  margin: 5px 0px 5px 0px;
+  padding: 5px 0px 5px 10px;
+  color: #666666;
+}
+
+.product-name {
+  display: inline;
+}
+
+button {
+  font-size: 10pt;
+  border: 1px solid yellowgreen;
+  margin: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.footer {
+  color: yellowgreen;
+  font-size: 10pt;
+}
+
+hr {
+  border-color: yellowgreen;
 }
