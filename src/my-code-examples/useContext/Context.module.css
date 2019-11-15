@@ -1,0 +1,10 @@
+.box {
+  border: 1px solid Red;
+  margin: 5px;
+  padding: 5px;
+}
+
+h2 {
+  display: inline;
+  padding-right: 30px;
+}
