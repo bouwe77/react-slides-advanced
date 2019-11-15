@@ -5,7 +5,9 @@ export default () => {
   const markdown = `
 # EXERCISE
 
-Make the timeline real-time(ish) by adding polling
+Implement basic search functionality 
+
+with useState and conditional rendering
 
 https://bouwe.io/workshops/advanced
     `;

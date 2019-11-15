@@ -5,7 +5,7 @@ export default () => {
   const markdown = `
 # Do You Haz The Codez?
 
-Let me show you around in the Nitwit code
+Let me show you around in the exercise code 🔦
   `;
   return <MarkdownSlide markdown={markdown} />;
 };

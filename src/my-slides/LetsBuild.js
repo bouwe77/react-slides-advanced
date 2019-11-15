@@ -5,7 +5,11 @@ export default () => {
   const markdown = `
 # LET'S BUILD...
 
-an enhanced [twitter clone] (https://nitwit.netlify.com) :)
+a totally useless app...
+
+(but still learn a lot!)
+
+[demo]
  `;
   return <MarkdownSlide markdown={markdown} />;
 };

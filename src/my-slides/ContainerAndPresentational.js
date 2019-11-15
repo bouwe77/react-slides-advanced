@@ -5,7 +5,9 @@ export default () => {
   const markdown = `
 # CONTAINER & PRESENTATIONAL COMPONENTS
 
-Separation of behavioral & UI components
+* Container: State, behavior, logic, etc. 
+
+* Presentational: UI components depending on props
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

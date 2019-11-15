@@ -3,15 +3,9 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# So goodbye old stuff? 👋
+# BEFORE HOOKS
 
-- Class components
-
-- Container & Presentational components
-
-- Higher Order Components
-
-- Render props
+< March 2019
 `;
   return <MarkdownSlide markdown={markdown} />;
 };
