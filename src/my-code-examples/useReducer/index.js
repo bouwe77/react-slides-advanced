@@ -3,7 +3,7 @@ import styles from "./Game.module.css";
 import { curious, wow, glad, victorious, key, coffin, door, hurray, restart } from "./emojis";
 
 export default () => {
-  const [feeling, setFeeling] = useState(neutral);
+  const [feeling, setFeeling] = useState(curious);
   const [inventory, setInventory] = useState([]);
   const [isKeyInInventory, setIsKeyInInventory] = useState(false);
   const [coffinOpened, setCoffinOpened] = useState(false);
