@@ -3,7 +3,7 @@ import styles from "./Game.module.css";
 import { curious, wow, glad, victorious, key, coffin, door, hurray, restart } from "./emojis";
 
 export default () => {
-  const [feeling, setFeeling] = useState(curious);
+  const [feeling, setFeeling] = useState(neutral);
   const [inventory, setInventory] = useState([]);
   const [isKeyInInventory, setIsKeyInInventory] = useState(false);
   const [coffinOpened, setCoffinOpened] = useState(false);
@@ -56,6 +56,7 @@ export default () => {
       <div className={styles.container}>
         <div className={styles.vertical}>
           <Emoji item={feeling} />
+          you
           {inventory.map(item => (
             <Emoji item={item} onClick={() => putBackInventory(item)} />
           ))}
@@ -67,6 +68,7 @@ export default () => {
               enabled={!insideTheRoom}
               onClick={coffinOpened ? closeTheCoffin : openTheCoffin}
             />
+            coffin
             {coffinOpened && !isKeyInInventory && (
               <Emoji
                 item={key}
@@ -85,11 +87,14 @@ export default () => {
               <Emoji item={restart} onClick={restartGame} />
             </>
           ) : (
-            <Emoji
-              item={door}
-              onClick={insideTheRoom ? leaveTheRoom : enterTheRoom}
-              enabled={isKeyInInventory}
-            />
+            <>
+              <Emoji
+                item={door}
+                onClick={insideTheRoom ? leaveTheRoom : enterTheRoom}
+                enabled={isKeyInInventory}
+              />
+              door
+            </>
           )}
         </div>
       </div>
