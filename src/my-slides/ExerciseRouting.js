@@ -5,7 +5,7 @@ export default () => {
   const markdown = `
 # EXERCISE
 
-Replace conditional rendering with routing
+Add routing using React Router
 
 https://bouwe.io/workshops/advanced
     `;

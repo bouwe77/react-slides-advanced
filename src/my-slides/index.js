@@ -9,7 +9,6 @@ import ExampleRouting from "./ExampleRouting";
 // Exercises:
 import ExerciseUseState from "./ExerciseUseState";
 import ExerciseRouting from "./ExerciseRouting";
-import ExerciseProfilePage from "./ExerciseProfilePage";
 import ExerciseUseReducer from "./ExerciseUseReducer";
 import ExerciseAuthentication from "./ExerciseAuthentication";
 
@@ -37,6 +36,8 @@ import UseReducer2 from "./UseReducer2";
 import UseContext from "./UseContext";
 import DoYouHazTheCodez from "./DoYouHazTheCodez";
 import BeforeHooks from "./BeforeHooks";
+import Context from "./Context";
+import Context2 from "./Context2";
 
 export default [
   Welcome,
@@ -64,7 +65,8 @@ export default [
   Routing,
   ExampleRouting,
   ExerciseRouting,
-  ExerciseProfilePage,
+  Context,
+  Context2,
   UseContext,
   ExampleUseContext,
   ExerciseAuthentication,

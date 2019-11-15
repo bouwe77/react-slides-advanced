@@ -3,11 +3,9 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# EXERCISE
+# Context
 
-Replace useState with useReducer
-
-https://bouwe.io/workshops/advanced
-    `;
+Provider and Consumer (pub-sub)
+`;
   return <MarkdownSlide markdown={markdown} />;
 };

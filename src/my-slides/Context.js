@@ -3,11 +3,11 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# EXERCISE
+# Context
 
-Add a profile page that uses the useTimeline custom hook
+Share state across components
 
-https://bouwe.io/workshops/advanced
+to avoid prop drilling
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

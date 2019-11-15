@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h3>{counter}</h3>
+      <h3>useState</h3>
     </>
   );
 }

@@ -1,34 +1,29 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 
-import HomePage from "./HomePage";
-import Header from "./Header";
-import ProductsPage from "./ProductsPage";
-import ProductDetailPage from "./ProductDetailPage";
-import AboutPage from "./AboutPage";
+export default () => (
+  <>
+    <h2>Routing with the React Router library</h2>
+  </>
+);
 
-function App() {
-  return (
-    <>
-      <Router>
-        <Header />
-        <Switch>
-          <Route path="/" exact>
-            <HomePage />
-          </Route>
-          <Route path="/products" exact>
-            <ProductsPage />
-          </Route>
-          <Route path="/products/:productId">
-            <ProductDetailPage />
-          </Route>
-          <Route path="/about">
-            <AboutPage />
-          </Route>
-        </Switch>
-      </Router>
-    </>
-  );
-}
+const HomePage = () => (
+  <>
+    <h2>Welcome to my homepage! 🏠</h2>
+    Here you can read all about me!
+  </>
+);
 
-export default App;
+const AboutPage = () => (
+  <>
+    <h2>About me 🧔🏻</h2>Hi, I am Bouwe, 42 years old, software engineer @ New Nexus and I like
+    drumming, running, hiking, sc Heerenveen and programming.
+  </>
+);
+
+const ContactPage = () => (
+  <>
+    <h2>Contact me 💌</h2>You can contact me on Twitter via <a>@bouwe</a>, send an email to{" "}
+    <a>bouwe@bouwe.nl</a> and my blog is on <a>bouwe.io</a>
+  </>
+);

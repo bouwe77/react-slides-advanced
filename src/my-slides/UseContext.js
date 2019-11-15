@@ -5,7 +5,7 @@ export default () => {
   const markdown = `
 # useContext HOOK
 
-...
+For **consuming** context values
     `;
   return <MarkdownSlide markdown={markdown} />;
 };
