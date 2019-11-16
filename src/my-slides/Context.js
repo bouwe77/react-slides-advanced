@@ -5,9 +5,9 @@ export default () => {
   const markdown = `
 # Context
 
-Share state across components to avoid prop drilling
+* Share state across components to avoid prop drilling
 
-💡 _React Docs: "Apply it sparingly because it makes component reuse difficult"_
+* Provider and Consumer (pub-sub)
 
     `;
   return <MarkdownSlide markdown={markdown} />;

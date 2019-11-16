@@ -10,7 +10,7 @@ import ExampleRouting from "./ExampleRouting";
 import ExerciseUseState from "./ExerciseUseState";
 import ExerciseRouting from "./ExerciseRouting";
 import ExerciseUseReducer from "./ExerciseUseReducer";
-import ExerciseAuthentication from "./ExerciseAuthentication";
+import ExerciseContext from "./ExerciseContext";
 
 // My slides:
 import AndYou from "./AndYou";
@@ -37,7 +37,8 @@ import UseContext from "./UseContext";
 import DoYouHazTheCodez from "./DoYouHazTheCodez";
 import BeforeHooks from "./BeforeHooks";
 import Context from "./Context";
-import Context2 from "./Context2";
+import ContextIsNiceBut from "./Context2";
+import ColocatingState from "./ColocatingState";
 
 export default [
   Welcome,
@@ -66,13 +67,14 @@ export default [
   ExampleRouting,
   ExerciseRouting,
   Context,
-  Context2,
   UseContext,
   ExampleUseContext,
-  ExerciseAuthentication,
-  UseEffect,
-  ExampleUseEffect,
+  ExerciseContext,
+  ContextIsNiceBut,
+  ColocatingState,
   CustomHooks,
   ExampleCustomHooks,
+  UseEffect,
+  ExampleUseEffect,
   Thanks
 ];

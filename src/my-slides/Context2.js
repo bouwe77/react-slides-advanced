@@ -3,10 +3,11 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# Context
+# Context is nice, but...
 
-Provider and Consumer (pub-sub)
+* It makes reuse difficult
 
+* Try state and props first!
 `;
   return <MarkdownSlide markdown={markdown} />;
 };

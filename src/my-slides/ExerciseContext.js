@@ -5,7 +5,7 @@ export default () => {
   const markdown = `
 # EXERCISE
 
-...authentication...
+Add authentication to the app
 
 https://bouwe.io/workshops/advanced
     `;
