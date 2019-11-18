@@ -21,7 +21,9 @@ import Thanks from "./Thanks";
 import ToDoToday from "./ToDoToday";
 import Welcome from "./Welcome";
 import Routing from "./Routing";
-import Hooks from "./Hooks";
+import Hooks1 from "./Hooks1";
+import Hooks2 from "./Hooks2";
+import Hooks3 from "./Hooks3";
 import CustomHooks from "./CustomHooks";
 import UseState from "./UseState";
 import UseEffect from "./UseEffect";
@@ -53,8 +55,10 @@ export default [
   Behavior,
   ContainerAndPresentational,
   ExtractingBehavior,
-  Hooks,
+  Hooks1,
   GoodbyeOldStuff,
+  Hooks2,
+  Hooks3,
   UseState,
   ExampleUseState,
   DoYouHazTheCodez,
@@ -72,9 +76,9 @@ export default [
   ExerciseContext,
   ContextIsNiceBut,
   ColocatingState,
-  CustomHooks,
-  ExampleCustomHooks,
   UseEffect,
   ExampleUseEffect,
+  CustomHooks,
+  ExampleCustomHooks,
   Thanks
 ];

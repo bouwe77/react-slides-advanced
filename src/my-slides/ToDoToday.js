@@ -5,7 +5,17 @@ export default () => {
   const markdown = `
 # TO DO TODAY
 
-![To Do Today](todotoday.png "To Do Today")
+Loop:
+
+* Introduce subject
+
+* Show example code
+
+* Do exercise
+
+* Walkthrough exercise
+
+* 10 minute break
 
   `;
   return <MarkdownSlide markdown={markdown} />;

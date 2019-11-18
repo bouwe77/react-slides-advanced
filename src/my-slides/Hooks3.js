@@ -3,11 +3,21 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# useEffect HOOK
+# HOOKS
 
-Apart from rendering the UI and handling events, 
+Today:
 
-does the component have to DO(M) something else?
+* useState
+
+* useReducer
+
+* useEffect
+
+* useContext
+
+* useRef (?)
+
+Others: useCallback, useMemo, useImperativeHandle, useLayoutEffect, useDebugValue
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

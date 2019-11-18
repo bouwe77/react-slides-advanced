@@ -5,11 +5,7 @@ export default () => {
   const markdown = `
 # HOOKS
 
-- Let you **compose** state and behavior
-
-- Making component code **declarative** instead of imperative
-
-- Are primitives
-    `;
+One way of doing things
+`;
   return <MarkdownSlide markdown={markdown} />;
 };

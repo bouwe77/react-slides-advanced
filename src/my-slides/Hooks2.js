@@ -3,11 +3,13 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# useEffect HOOK
+# HOOKS ARE...
 
-Apart from rendering the UI and handling events, 
+* Part of the React library
 
-does the component have to DO(M) something else?
+* Just javascript functions
+
+* Primitives
     `;
   return <MarkdownSlide markdown={markdown} />;
 };
