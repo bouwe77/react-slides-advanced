@@ -14,7 +14,7 @@ Updating refs is a side effect.
 
 Examples: DOM elements, timers, etc. 
 
-https://medium.com/trabe/react-useref-hook-b6c9d39e2022
+👉 https://medium.com/trabe/react-useref-hook-b6c9d39e2022
 `;
   return <MarkdownSlide markdown={markdown} />;
 };

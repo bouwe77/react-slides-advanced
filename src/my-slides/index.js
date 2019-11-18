@@ -6,6 +6,9 @@ import ExampleUseReducer from "./ExampleUseReducer";
 import ExampleUseContext from "./ExampleUseContext";
 import ExampleRouting from "./ExampleRouting";
 import ExampleUseRef from "./ExampleUseRef";
+import ExampleClass from "./ExampleClass";
+import ExampleHOC from "./ExampleHOC";
+import ExampleRenderProps from "./ExampleRenderProps";
 
 // Exercises:
 import ExerciseUseState from "./ExerciseUseState";
@@ -57,9 +60,12 @@ export default [
   React,
   BeforeHooks,
   State,
+  ExampleClass,
   Behavior,
   ContainerAndPresentational,
   ExtractingBehavior,
+  ExampleHOC,
+  ExampleRenderProps,
   Hooks1,
   GoodbyeOldStuff,
   Hooks2,
