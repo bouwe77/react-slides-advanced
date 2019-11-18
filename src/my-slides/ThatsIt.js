@@ -7,13 +7,13 @@ export default () => {
 
 Next steps:
 
-* Practice, practice, practice! 💪
+💪 Practice, practice, practice!
 
-* Let's keep in touch! 💌
+💌 Let's keep in touch! 
 
-* Memoization: React.Memo, useMemo, useCallback 🧠
+🧠 Memoization: React.Memo, useMemo, useCallback 
 
-* Cool things to look at: Next.js, Immer, Mobx State Tree 🤩
+🤩 Cool things to look at: Next.js, Immer, Mobx State Tree 
   `;
   return <MarkdownSlide markdown={markdown} />;
 };
