@@ -16,7 +16,12 @@ function TrackList({ tracks, currentTrackIndex, selectTrackIndex }) {
     <>
       {tracks.map((track, index) => (
         <div>
-          <Track index={index} title={track.title} selected={index === currentTrackIndex} />
+          <Track
+            key={index}
+            index={index}
+            title={track.title}
+            selected={index === currentTrackIndex}
+          />
         </div>
       ))}
     </>

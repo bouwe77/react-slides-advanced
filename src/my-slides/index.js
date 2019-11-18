@@ -5,6 +5,7 @@ import ExampleCustomHooks from "./ExampleCustomHooks";
 import ExampleUseReducer from "./ExampleUseReducer";
 import ExampleUseContext from "./ExampleUseContext";
 import ExampleRouting from "./ExampleRouting";
+import ExampleUseRef from "./ExampleUseRef";
 
 // Exercises:
 import ExerciseUseState from "./ExerciseUseState";
@@ -41,6 +42,7 @@ import BeforeHooks from "./BeforeHooks";
 import Context from "./Context";
 import ContextIsNiceBut from "./Context2";
 import ColocatingState from "./ColocatingState";
+import UseRef from "./UseRef";
 
 export default [
   Welcome,
@@ -80,5 +82,7 @@ export default [
   ExampleUseEffect,
   CustomHooks,
   ExampleCustomHooks,
+  UseRef,
+  ExampleUseRef,
   Thanks
 ];
