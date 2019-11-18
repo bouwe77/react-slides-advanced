@@ -6,8 +6,6 @@ export default () => {
 # EXERCISE
 
 Create a custom hook
-
-https://bouwe.io/workshops/advanced
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

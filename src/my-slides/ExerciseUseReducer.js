@@ -6,8 +6,6 @@ export default () => {
 # EXERCISE
 
 Replace useState with useReducer
-
-https://bouwe.io/workshops/advanced
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

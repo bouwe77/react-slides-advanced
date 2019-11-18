@@ -6,8 +6,6 @@ export default () => {
 # EXERCISE
 
 Add authentication to the app
-
-https://bouwe.io/workshops/advanced
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

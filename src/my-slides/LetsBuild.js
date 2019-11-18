@@ -7,7 +7,7 @@ export default () => {
 
 A React app! ⚛️
 
-[demo]
+https://csb-m0j8o.netlify.com
  `;
   return <MarkdownSlide markdown={markdown} />;
 };

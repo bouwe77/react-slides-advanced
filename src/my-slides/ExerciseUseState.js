@@ -8,8 +8,6 @@ export default () => {
 Implement basic search functionality 
 
 with useState and conditional rendering
-
-https://bouwe.io/workshops/advanced
     `;
   return <MarkdownSlide markdown={markdown} />;
 };
