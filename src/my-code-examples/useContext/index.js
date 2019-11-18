@@ -30,7 +30,7 @@ function Webshop() {
     <>
       <Switch>
         <Route path="/" exact>
-          <ProductPage />
+          <Products />
         </Route>
         <Route path="/cart" exact>
           <ShoppingCart />
@@ -54,7 +54,7 @@ function Header() {
   );
 }
 
-function ProductPage() {
+function Products() {
   const products = getProducts();
   return (
     <>

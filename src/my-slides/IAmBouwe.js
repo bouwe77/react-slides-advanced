@@ -3,7 +3,7 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# I am **Bouwe**
+# I am **Bouwe** 🧔🏻👋
 
 Software Engineer @ New Nexus
 

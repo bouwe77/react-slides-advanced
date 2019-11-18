@@ -3,7 +3,7 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# PICS
+# PICS 📸
 
 ...or it didn't happen?
     `;

@@ -12,6 +12,7 @@ import ExerciseUseState from "./ExerciseUseState";
 import ExerciseRouting from "./ExerciseRouting";
 import ExerciseUseReducer from "./ExerciseUseReducer";
 import ExerciseContext from "./ExerciseContext";
+import ExerciseCustomHooks from "./ExerciseCustomHooks";
 
 // My slides:
 import AndYou from "./AndYou";
@@ -44,6 +45,7 @@ import ContextIsNiceBut from "./Context2";
 import ColocatingState from "./ColocatingState";
 import UseRef from "./UseRef";
 import ThatsIt from "./ThatsIt";
+import Break from "./Break";
 
 export default [
   Welcome,
@@ -66,10 +68,12 @@ export default [
   ExampleUseState,
   DoYouHazTheCodez,
   ExerciseUseState,
+  Break,
   UseReducer,
   UseReducer2,
   ExampleUseReducer,
   ExerciseUseReducer,
+  Break,
   Routing,
   ExampleRouting,
   ExerciseRouting,
@@ -77,12 +81,15 @@ export default [
   UseContext,
   ExampleUseContext,
   ExerciseContext,
+  Break,
   ContextIsNiceBut,
   ColocatingState,
   UseEffect,
   ExampleUseEffect,
   CustomHooks,
   ExampleCustomHooks,
+  ExerciseCustomHooks,
+  Break,
   UseRef,
   ExampleUseRef,
   ThatsIt,

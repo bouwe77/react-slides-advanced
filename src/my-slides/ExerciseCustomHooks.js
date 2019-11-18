@@ -3,11 +3,11 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# LET'S BUILD...
+# EXERCISE
 
-A React app! ⚛️
+Create a custom hook
 
-[demo]
- `;
+https://bouwe.io/workshops/advanced
+    `;
   return <MarkdownSlide markdown={markdown} />;
 };

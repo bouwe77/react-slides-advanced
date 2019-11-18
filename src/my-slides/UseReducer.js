@@ -5,7 +5,7 @@ export default () => {
   const markdown = `
 # useReducer HOOK
 
-useState on steroids...
+useState on steroids... 💪
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

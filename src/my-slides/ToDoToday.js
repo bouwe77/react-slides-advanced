@@ -5,17 +5,19 @@ export default () => {
   const markdown = `
 # TO DO TODAY
 
-Loop:
+do {
 
-* Introduce subject
+> I introduce a subject
 
-* Show example code
+> I show example code
 
-* Do exercise
+> You do an exercise
 
-* Walkthrough exercise
+> We walkthrough the exercise
 
-* 10 minute break
+> We have a 10 minute break
+
+} while not 17:00
 
   `;
   return <MarkdownSlide markdown={markdown} />;

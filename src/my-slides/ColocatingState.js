@@ -13,11 +13,12 @@ export default () => {
         width="600"
       />
 
-      <h5>
+      <p>
+        👉{" "}
         <a href="https://kentcdodds.com/blog/state-colocation-will-make-your-react-app-faster">
-          copyright &copy; Kent C. Dodds
+          Colocating State by Kent C. Dodds
         </a>
-      </h5>
+      </p>
     </>
   );
 };

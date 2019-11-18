@@ -8,6 +8,8 @@ export default () => {
 * It makes reuse difficult
 
 * Try state and props first!
+
+👉 https://www.youtube.com/watch?v=3XaXKiXtNjw
 `;
   return <MarkdownSlide markdown={markdown} />;
 };
