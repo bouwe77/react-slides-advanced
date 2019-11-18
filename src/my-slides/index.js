@@ -43,6 +43,7 @@ import Context from "./Context";
 import ContextIsNiceBut from "./Context2";
 import ColocatingState from "./ColocatingState";
 import UseRef from "./UseRef";
+import ThatsIt from "./ThatsIt";
 
 export default [
   Welcome,
@@ -84,5 +85,6 @@ export default [
   ExampleCustomHooks,
   UseRef,
   ExampleUseRef,
+  ThatsIt,
   Thanks
 ];
