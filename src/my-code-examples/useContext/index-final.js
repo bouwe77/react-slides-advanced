@@ -1,26 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styles from "./Context.module.css";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+
+let CartContext = React.createContext();
 
 function App() {
   const [cart, setCart] = useState([]);
   const [nrOfProductsInCart, setNrOfProductsInCart] = useState(0);
 
-  const addToCart = product => {
+  function addToCart(product) {
     setCart([...cart, product]);
     setNrOfProductsInCart(cart.length + 1);
-  };
+  }
 
   console.log({ cart });
 
   return (
     <div className={styles.app}>
-      <Router>
-        <Header />
-        <Webshop />
-      </Router>
-      <hr />
-      <div className={styles.footer}> copyright &copy; shop.com</div>{" "}
+      <CartContext.Provider value={{ cart, nrOfProductsInCart, addToCart }}>
+        <Router>
+          <Header />
+          <Webshop />
+        </Router>
+        <hr />
+        <div className={styles.footer}> copyright &copy; shop.com</div>{" "}
+      </CartContext.Provider>
     </div>
   );
 }
@@ -66,7 +70,9 @@ function ProductPage() {
   );
 }
 
-function Product({ name, price, addToCart }) {
+function Product({ name, price }) {
+  const { addToCart } = useContext(CartContext);
+
   return (
     <div className={styles.product}>
       <h3 className={styles["product-name"]}>{name} </h3>
@@ -76,7 +82,9 @@ function Product({ name, price, addToCart }) {
   );
 }
 
-function ShoppingCartCounter({ nrOfProductsInCart }) {
+function ShoppingCartCounter() {
+  const { nrOfProductsInCart } = useContext(CartContext);
+
   return (
     <span className={styles.count}>
       🛍{nrOfProductsInCart > 0 && `(${nrOfProductsInCart})`}
@@ -84,11 +92,13 @@ function ShoppingCartCounter({ nrOfProductsInCart }) {
   );
 }
 
-function ShoppingCart({ productsInCart }) {
+function ShoppingCart() {
+  const { cart } = useContext(CartContext);
+
   return (
     <>
       <h3>Shopping Cart</h3>
-      {productsInCart && productsInCart.map(product => <Product name={product} />)}
+      {cart && cart.map(product => <Product name={product} />)}
     </>
   );
 }
