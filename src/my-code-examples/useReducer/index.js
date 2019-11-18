@@ -58,7 +58,7 @@ export default () => {
           <Emoji item={feeling} />
           you
           {inventory.map(item => (
-            <Emoji item={item} onClick={() => putBackInventory(item)} />
+            <Emoji key={item} item={item} onClick={() => putBackInventory(item)} />
           ))}
         </div>
         <div className={styles.vertical}>
