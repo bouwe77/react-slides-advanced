@@ -84,11 +84,11 @@ function ShoppingCartCounter({ nrOfProductsInCart }) {
   );
 }
 
-function ShoppingCart({ productsInCart }) {
+function ShoppingCart({ cart }) {
   return (
     <>
       <h3>Shopping Cart</h3>
-      {productsInCart && productsInCart.map(product => <Product name={product} />)}
+      {cart && cart.map(product => <Product name={product} />)}
     </>
   );
 }

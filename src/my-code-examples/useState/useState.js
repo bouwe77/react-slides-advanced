@@ -1,7 +1,7 @@
 import React from "react";
 
 function App() {
-  const counter = 42;
+  let counter = 42;
 
   return (
     <>
