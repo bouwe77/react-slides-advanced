@@ -93,7 +93,7 @@ export default () => {
                 onClick={insideTheRoom ? leaveTheRoom : enterTheRoom}
                 enabled={isKeyInInventory}
               />
-              door
+              room
             </>
           )}
         </div>
