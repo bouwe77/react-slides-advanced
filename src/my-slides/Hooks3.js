@@ -17,7 +17,8 @@ Today:
 
 * useRef (?)
 
-Others: useCallback, useMemo, useImperativeHandle, useLayoutEffect, useDebugValue
+Other hooks:
+useCallback, useMemo, useImperativeHandle, useLayoutEffect, useDebugValue
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

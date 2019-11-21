@@ -3,9 +3,9 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# REACT
+# REACT 101 ⚛️
 
-Components, state and behavior
+...
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

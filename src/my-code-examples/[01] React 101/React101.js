@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h3>useState</h3>
+      <h3>React 101 ⚛️</h3>
     </>
   );
 }

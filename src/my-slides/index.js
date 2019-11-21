@@ -1,14 +1,11 @@
 // My code samples:
-import ExampleUseState from "./ExampleUseState";
+import ExampleReact101 from "./ExampleReact101";
 import ExampleUseEffect from "./ExampleUseEffect";
 import ExampleCustomHooks from "./ExampleCustomHooks";
 import ExampleUseReducer from "./ExampleUseReducer";
 import ExampleUseContext from "./ExampleUseContext";
 import ExampleRouting from "./ExampleRouting";
 import ExampleUseRef from "./ExampleUseRef";
-import ExampleClass from "./ExampleClass";
-import ExampleHOC from "./ExampleHOC";
-import ExampleRenderProps from "./ExampleRenderProps";
 
 // Exercises:
 import ExerciseUseState from "./ExerciseUseState";
@@ -30,13 +27,9 @@ import Hooks1 from "./Hooks1";
 import Hooks2 from "./Hooks2";
 import Hooks3 from "./Hooks3";
 import CustomHooks from "./CustomHooks";
-import UseState from "./UseState";
 import UseEffect from "./UseEffect";
-import State from "./State";
-import React from "./React";
-import Behavior from "./Behavior";
-import ExtractingBehavior from "./ExtractingBehavior";
-import ContainerAndPresentational from "./ContainerAndPresentational";
+import React1 from "./React1";
+import React2 from "./React2";
 import GoodbyeOldStuff from "./GoodbyeOldStuff";
 import UseReducer from "./UseReducer";
 import UseReducer2 from "./UseReducer2";
@@ -57,21 +50,14 @@ export default [
   Pics,
   ToDoToday,
   LetsBuild,
-  React,
+  React1,
+  ExampleReact101,
+  React2,
   BeforeHooks,
-  State,
-  ExampleClass,
-  Behavior,
-  ContainerAndPresentational,
-  ExtractingBehavior,
-  ExampleHOC,
-  ExampleRenderProps,
   Hooks1,
   GoodbyeOldStuff,
   Hooks2,
   Hooks3,
-  UseState,
-  ExampleUseState,
   DoYouHazTheCodez,
   ExerciseUseState,
   Break,

@@ -5,7 +5,7 @@ export default () => {
   const markdown = `
 # HOOKS
 
-One way of doing things
+Since March 2019
 `;
   return <MarkdownSlide markdown={markdown} />;
 };
