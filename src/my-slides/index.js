@@ -30,6 +30,7 @@ import CustomHooks from "./CustomHooks";
 import UseEffect from "./UseEffect";
 import React1 from "./React1";
 import React2 from "./React2";
+import React3 from "./React3";
 import GoodbyeOldStuff from "./GoodbyeOldStuff";
 import UseReducer from "./UseReducer";
 import UseReducer2 from "./UseReducer2";
@@ -61,8 +62,9 @@ export default [
   ToDoToday,
   LetsBuild,
   React1,
-  ExampleReact101,
   React2,
+  ExampleReact101,
+  React3,
   BeforeHooks,
   Hooks1,
   GoodbyeOldStuff,
