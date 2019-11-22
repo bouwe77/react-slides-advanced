@@ -3,17 +3,12 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# &lt; Welcome /&gt;
-`;
+# NEW NEXUS: Samen
+    `;
   return (
     <div align="center">
       <MarkdownSlide markdown={markdown} />
-      <img src="/1280px-React-icon.png" alt="React" />
-      <h3>
-        React Advanced @ New Nexus
-        <br />
-        November 26, 2019
-      </h3>
+      <img src="/New Nexus.jpg" alt="New Nexus" />
     </div>
   );
 };

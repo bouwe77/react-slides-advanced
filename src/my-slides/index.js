@@ -42,10 +42,20 @@ import ColocatingState from "./ColocatingState";
 import UseRef from "./UseRef";
 import ThatsIt from "./ThatsIt";
 import Break from "./Break";
+import NewNexus1 from "./NewNexus1";
+import NewNexus2 from "./NewNexus2";
+import NewNexus3 from "./NewNexus3";
+import NewNexusBegin from "./NewNexusBegin";
+import NewNexusEnd from "./NewNexusEnd";
 
 export default [
   Welcome,
   IAmBouwe,
+  NewNexusBegin,
+  NewNexus1,
+  NewNexus2,
+  NewNexus3,
+  NewNexusEnd,
   AndYou,
   Pics,
   ToDoToday,
