@@ -8,6 +8,7 @@ function App() {
         <h1>My Number App</h1>
       </div>
       <Counter />
+      <Counter2 />
     </>
   );
 }
@@ -42,6 +43,35 @@ function Counter() {
       <br />
     </div>
   );
+}
+
+class Counter2 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { counter: 0 };
+  }
+
+  decrement = () => {
+    this.setState({ counter: this.state.counter - 1 });
+  };
+
+  increment = () => {
+    this.setState({ counter: this.state.counter + 1 });
+  };
+
+  render() {
+    return (
+      <div className={styles.counter}>
+        <button className={styles.button} onClick={this.decrement}>
+          -
+        </button>
+        <div className={styles.number}> {this.state.counter}</div>{" "}
+        <button className={styles.button} onClick={this.increment}>
+          +
+        </button>
+      </div>
+    );
+  }
 }
 
 function Number({ number }) {

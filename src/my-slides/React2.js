@@ -51,7 +51,8 @@ export default () => {
         </tr>
         <tr>
           <td>
-            <input type="checkbox" /> <h2>&#123;JavaScript Land&#125;</h2>
+            <input type="checkbox" />{" "}
+            <h2> JavasScript land: &#123; between curly braces &#125;</h2>
           </td>
           <td>
             <input type="checkbox" /> <h2>Props from parent to child</h2>
