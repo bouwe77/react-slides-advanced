@@ -1,8 +1,13 @@
+.container {
+  display: flex;
+}
+
 .neon {
   position: relative;
   overflow: hidden;
   filter: brightness(200%);
   text-align: center;
+  width: 500px;
 }
 
 .text {
@@ -14,6 +19,7 @@
   text-transform: uppercase;
   position: relative;
   user-select: none;
+  padding: 20px;
 }
 
 .text::before {

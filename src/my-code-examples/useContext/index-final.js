@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import styles from "./Context.module.css";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
+import Blink from "react-blink-tag";
 
 let CartContext = React.createContext();
 
@@ -98,6 +99,9 @@ function ShoppingCart() {
   return (
     <>
       <h3>Shopping Cart</h3>
+      <Blink speed="slow" fade>
+        <span class={styles.red}> Spot the bug 😉</span>
+      </Blink>
       {cart && cart.map(product => <Product name={product} />)}
     </>
   );
