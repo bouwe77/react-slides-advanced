@@ -1,5 +1,16 @@
-.container {
+.counter {
   display: flex;
+}
+
+.button {
+  width: 100px;
+  font-size: 100px;
+}
+
+.number {
+  font-size: 180px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 .neon {

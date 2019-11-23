@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Hello World</h1>
+        <h1>My Number App</h1>
       </div>
       <Counter />
     </>
@@ -24,20 +24,30 @@ function Counter() {
   }
 
   return (
-    <div>
-      {counter > 0 && <button onClick={decrement}>-</button>}
-      <Number counter={counter} />
-      <button onClick={increment}>+</button>
+    <div className={styles.counter}>
+      {counter > 0 && (
+        <button className={styles.button} onClick={decrement}>
+          -
+        </button>
+      )}
+      <Number number={counter} />
+      {counter < 10 ? (
+        <button className={styles.button} onClick={increment}>
+          +
+        </button>
+      ) : (
+        <>Sorry, not available...</>
+      )}
       <br />
       <br />
     </div>
   );
 }
 
-function Number({ counter }) {
+function Number({ number }) {
   return (
     <div className={styles.neon}>
-      <span className={styles.text}>{counter}</span>
+      <span className={styles.text}>{number}</span>
       <span className={styles.gradient} />
       <span className={styles.spotlight} />
     </div>
