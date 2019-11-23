@@ -10,7 +10,7 @@ export default () => {
       <br />
       <br />
       <br />
-      <h1>REACT 101 ⚛️</h1>
+      <h1>Crash Course REACT 101 ⚛️</h1>
     </div>
   );
 };

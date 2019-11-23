@@ -129,7 +129,9 @@ function simpleSearchForm({ setNumber, searchNumber }) {
   return (
     <>
       <input onChange={event => setNumber(event.target.value)} />
-      <button onClick={searchNumber}>go</button>
+      <button className={styles.button} onClick={searchNumber}>
+        go
+      </button>
     </>
   );
 }
@@ -155,23 +157,35 @@ function complexSearchForm({ number, setNumber, searchType, setSearchType, searc
     <>
       <div className={styles.container}>
         <div>
-          <button onClick={() => updateNumber(-100)}>-100</button>
+          <button className={styles.button} onClick={() => updateNumber(-100)}>
+            -100
+          </button>
         </div>
         <div>
-          <button onClick={() => updateNumber(-10)}>-10</button>
+          <button className={styles.button} onClick={() => updateNumber(-10)}>
+            -10
+          </button>
         </div>
         <div>
-          <button onClick={() => updateNumber(-1)}>-1</button>
+          <button className={styles.button} onClick={() => updateNumber(-1)}>
+            -1
+          </button>
         </div>
         <div className={styles.number}>{number}</div>
         <div>
-          <button onClick={() => updateNumber(1)}>+1</button>
+          <button className={styles.button} onClick={() => updateNumber(1)}>
+            +1
+          </button>
         </div>
         <div>
-          <button onClick={() => updateNumber(10)}>+10</button>
+          <button className={styles.button} onClick={() => updateNumber(10)}>
+            +10
+          </button>
         </div>
         <div>
-          <button onClick={() => updateNumber(100)}>+100</button>
+          <button className={styles.button} onClick={() => updateNumber(100)}>
+            +100
+          </button>
         </div>
       </div>
       <div>
@@ -204,7 +218,7 @@ function complexSearchForm({ number, setNumber, searchType, setSearchType, searc
         </label>
       </div>
       <div>
-        <button onClick={searchNumber} className={styles.search}>
+        <button className={styles.button} onClick={searchNumber} className={styles.search}>
           SEARCH!
         </button>
       </div>

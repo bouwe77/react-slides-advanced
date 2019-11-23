@@ -99,23 +99,35 @@ class NumberApiSearchForm extends Component {
       <>
         <div className={styles.container}>
           <div>
-            <button onClick={() => this.updateNumber(-100)}>-100</button>
+            <button className={styles.button} onClick={() => this.updateNumber(-100)}>
+              -100
+            </button>
           </div>
           <div>
-            <button onClick={() => this.updateNumber(-10)}>-10</button>
+            <button className={styles.button} onClick={() => this.updateNumber(-10)}>
+              -10
+            </button>
           </div>
           <div>
-            <button onClick={() => this.updateNumber(-1)}>-1</button>
+            <button className={styles.button} onClick={() => this.updateNumber(-1)}>
+              -1
+            </button>
           </div>
           <div className={styles.number}>{this.state.number}</div>
           <div>
-            <button onClick={() => this.updateNumber(1)}>+1</button>
+            <button className={styles.button} onClick={() => this.updateNumber(1)}>
+              +1
+            </button>
           </div>
           <div>
-            <button onClick={() => this.updateNumber(10)}>+10</button>
+            <button className={styles.button} onClick={() => this.updateNumber(10)}>
+              +10
+            </button>
           </div>
           <div>
-            <button onClick={() => this.updateNumber(100)}>+100</button>
+            <button className={styles.button} onClick={() => this.updateNumber(100)}>
+              +100
+            </button>
           </div>
         </div>
         <div>
@@ -148,7 +160,11 @@ class NumberApiSearchForm extends Component {
           </label>
         </div>
         <div>
-          <button onClick={this.handleSearchClick} className={styles.search}>
+          <button
+            className={styles.button}
+            onClick={this.handleSearchClick}
+            className={styles.search}
+          >
             SEARCH!
           </button>
         </div>

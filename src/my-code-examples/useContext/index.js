@@ -60,7 +60,7 @@ function Products() {
     <>
       <h3>Products</h3>
       {products.map(product => (
-        <Product name={product.name} price={product.price} />
+        <Product key={product.name} name={product.name} price={product.price} />
       ))}
     </>
   );

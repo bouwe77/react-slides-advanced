@@ -13,7 +13,7 @@ export default ({ giphyUrl }) => {
         width="420"
         height="480"
         frameBorder="0"
-        class="giphy-embed"
+        className="giphy-embed"
         allowFullScreen
         title="coffee"
       />

@@ -31,16 +31,6 @@ a {
   display: inline;
 }
 
-button {
-  font-size: 10pt;
-  border: 1px solid yellowgreen;
-  margin: 0;
-}
-
-button:focus {
-  outline: none;
-}
-
 .footer {
   color: yellowgreen;
   font-size: 10pt;
