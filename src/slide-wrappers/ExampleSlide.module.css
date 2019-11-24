@@ -13,6 +13,11 @@ button {
   margin: 10px 10px 10px 10px;
 }
 
+input[type="text"] {
+  font-size: 22pt;
+  margin: 10px 10px 10px 10px;
+}
+
 .number {
   margin: 0px 20px 0px 20px;
 }

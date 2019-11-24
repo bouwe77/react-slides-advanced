@@ -5,7 +5,7 @@ export default () => {
   const markdown = `
 # EXERCISE
 
-Create a custom hook
+Create a custom hook with the useEffect hook
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

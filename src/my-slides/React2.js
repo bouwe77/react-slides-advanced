@@ -3,7 +3,7 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# REACT 101 ⚛️
+# REACT 101 ⚛️ Checklist
 `;
   return (
     <>
