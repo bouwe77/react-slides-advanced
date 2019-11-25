@@ -5,9 +5,11 @@ export default () => {
   const markdown = `
 # Do You Haz The Codez?
 
-* Exercise app
+* Exercise app: up and running on your laptop 👍
 
-* Example code: [bit.ly/react-advanced]
+* Exercises: [bit.ly/react-advanced-exercises]
+
+* Example code: [bit.ly/react-advanced-code]
   `;
   return <MarkdownSlide markdown={markdown} />;
 };
