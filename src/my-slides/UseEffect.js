@@ -5,9 +5,7 @@ export default () => {
   const markdown = `
 # useEffect HOOK
 
-Apart from rendering the UI and handling events, 
-
-does the component have to DO(M) something else?
+Handling side effects
     `;
   return <MarkdownSlide markdown={markdown} />;
 };

@@ -5,10 +5,6 @@ export default () => {
   const markdown = `
 # BEFORE HOOKS (March 2019)
 
-State:
-
-- Class components
-
 Separating UI from state and behavior: 
 
 - Container & Presentational components

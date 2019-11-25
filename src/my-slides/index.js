@@ -22,7 +22,6 @@ import Pics from "./Pics";
 import Thanks from "./Thanks";
 import ToDoToday from "./ToDoToday";
 import Welcome from "./Welcome";
-import Routing from "./Routing";
 import Hooks1 from "./Hooks1";
 import Hooks2 from "./Hooks2";
 import Hooks3 from "./Hooks3";
@@ -30,13 +29,13 @@ import CustomHooks from "./CustomHooks";
 import UseEffect from "./UseEffect";
 import React1 from "./React1";
 import React2 from "./React2";
-import React3 from "./React3";
 import GoodbyeOldStuff from "./GoodbyeOldStuff";
 import UseReducer from "./UseReducer";
 import UseReducer2 from "./UseReducer2";
 import UseContext from "./UseContext";
 import DoYouHazTheCodez from "./DoYouHazTheCodez";
-import BeforeHooks from "./BeforeHooks";
+import BeforeHooks1 from "./BeforeHooks1";
+import BeforeHooks2 from "./BeforeHooks2";
 import Context from "./Context";
 import ContextIsNiceBut from "./Context2";
 import ColocatingState from "./ColocatingState";
@@ -66,7 +65,8 @@ export default [
   React2,
   ExampleReact101,
   React2,
-  BeforeHooks,
+  BeforeHooks1,
+  BeforeHooks2,
   Hooks1,
   GoodbyeOldStuff,
   Hooks2,

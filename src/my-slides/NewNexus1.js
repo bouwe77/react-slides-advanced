@@ -3,7 +3,7 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# NEW NEXUS: WAT we doen?
+# Wat we doen?
 
 "Iets met IT..."
 

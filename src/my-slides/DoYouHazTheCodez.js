@@ -5,9 +5,9 @@ export default () => {
   const markdown = `
 # Do You Haz The Codez?
 
-* Let me show you around in the exercise app code 🔦
+* Exercise app
 
-* Example code and slides: https://codesandbox.io/s/react-slides-advanced-luwo8
+* Example code: [bit.ly/react-advanced]
   `;
   return <MarkdownSlide markdown={markdown} />;
 };

@@ -3,11 +3,11 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# useReducer HOOK
+# BEFORE HOOKS (March 2019)
 
-useState on steroids... 💪
+State:
 
-A more functional approach to state management
-    `;
+- Class components
+`;
   return <MarkdownSlide markdown={markdown} />;
 };

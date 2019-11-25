@@ -3,7 +3,7 @@ import MarkdownSlide from "../slide-wrappers/MarkdownSlide";
 
 export default () => {
   const markdown = `
-# NEW NEXUS: Samen
+# Samen
     `;
   return (
     <div align="center">
