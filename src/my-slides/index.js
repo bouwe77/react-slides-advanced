@@ -48,6 +48,7 @@ import NewNexus3 from "./NewNexus3";
 import NewNexusBegin from "./NewNexusBegin";
 import NewNexusEnd from "./NewNexusEnd";
 import Feedback from "./Feedback";
+import Questions from "./Questions";
 
 export default [
   Welcome,
@@ -94,7 +95,9 @@ export default [
   Break,
   UseRef,
   ExampleUseRef,
+  Questions,
   ThatsIt,
   Feedback,
-  Thanks
+  Thanks,
+  Questions
 ];
