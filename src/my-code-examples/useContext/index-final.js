@@ -1,7 +1,11 @@
 import React, { useState, useContext } from "react";
 import styles from "./Context.module.css";
-import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
-import Blink from "react-blink-tag";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 let CartContext = React.createContext();
 
@@ -64,7 +68,7 @@ function Products() {
   return (
     <>
       <h3>Products</h3>
-      {products.map(product => (
+      {products.map((product) => (
         <Product key={product.name} name={product.name} price={product.price} />
       ))}
     </>
@@ -99,10 +103,8 @@ function ShoppingCart() {
   return (
     <>
       <h3>Shopping Cart</h3>
-      <Blink speed="slow" fade>
-        <span class={styles.red}> Spot the bug 😉</span>
-      </Blink>
-      {cart && cart.map(product => <Product name={product} />)}
+      <span class={styles.red}> Spot the bug 😉</span>
+      {cart && cart.map((product) => <Product name={product} />)}
     </>
   );
 }
@@ -113,7 +115,7 @@ function getProducts() {
     { name: "Coftone 2", price: 99 },
     { name: "Unatrax Unlimited", price: 249 },
     { name: "Vento Dox", price: 199 },
-    { name: "Namfan Y5T", price: 999 }
+    { name: "Namfan Y5T", price: 999 },
   ];
 }
 
