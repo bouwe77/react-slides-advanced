@@ -1,61 +1,54 @@
-import React, { useReducer } from "react";
+import React, { useState } from "react";
 import styles from "./Game.module.css";
 import { curious, wow, glad, victorious, key, coffin, door, hurray, restart } from "./emojis";
 
-function gameReducer(state, action) {
-  switch (action.type) {
-    case "EnterTheRoom": {
-      return {
-        ...state,
-        insideTheRoom: true,
-        feeling: victorious
-      };
-    }
-    case "LeaveTheRoom": {
-      return { ...state, insideTheRoom: false, feeling: curious };
-    }
-    case "OpenTheCoffin": {
-      return { ...state, coffinOpened: true, feeling: wow };
-    }
-    case "CloseTheCoffin": {
-      return { ...state, coffinOpened: false, feeling: curious };
-    }
-    case "PickUpInventory": {
-      return {
-        ...state,
-        inventory: [...state.inventory, action.item],
-        feeling: glad,
-        isKeyInInventory: true
-      };
-    }
-    case "PutBackInventory": {
-      return {
-        ...state,
-        inventory: [...state.inventory.map(i => i !== action.item)],
-        feeling: curious,
-        isKeyInInventory: false
-      };
-    }
-    case "RestartGame": {
-      return initialState;
-    }
-    default:
-      return state;
-  }
-}
-
-const initialState = {
-  feeling: curious,
-  inventory: [],
-  isKeyInInventory: false,
-  coffinOpened: false,
-  insideTheRoom: false
-};
-
 export default () => {
-  const [state, dispatch] = useReducer(gameReducer, initialState);
+  const [feeling, setFeeling] = useState(curious);
+  const [inventory, setInventory] = useState([]);
+  const [isKeyInInventory, setIsKeyInInventory] = useState(false);
+  const [coffinOpened, setCoffinOpened] = useState(false);
+  const [insideTheRoom, setInsideTheRoom] = useState(false);
 
-  const { feeling, inventory, isKeyInInventory, coffinOpened, insideTheRoom } = state;
+  function enterTheRoom() {
+    setInsideTheRoom(true);
+    setFeeling(victorious);
+  }
+
+  function leaveTheRoom() {
+    setInsideTheRoom(false);
+    setFeeling(curious);
+  }
+
+  function openTheCoffin() {
+    setCoffinOpened(true);
+    setFeeling(wow);
+  }
+
+  function closeTheCoffin() {
+    setCoffinOpened(false);
+    setFeeling(curious);
+  }
+
+  function pickUpInventory(item) {
+    setInventory([...inventory, item]);
+    setFeeling(glad);
+    setIsKeyInInventory(true);
+  }
+
+  function putBackInventory(item) {
+    setInventory([...inventory.map(i => i !== item)]);
+    setFeeling(curious);
+    setIsKeyInInventory(false);
+  }
+
+  function restartGame() {
+    //TODO Make sure this matches the initial state...
+    setFeeling(curious);
+    setInventory([]);
+    setIsKeyInInventory(false);
+    setCoffinOpened(false);
+    setInsideTheRoom(false);
+  }
 
   return (
     <>
@@ -65,11 +58,7 @@ export default () => {
           <Emoji item={feeling} />
           you
           {inventory.map(item => (
-            <Emoji
-              key={item}
-              item={item}
-              onClick={() => dispatch({ type: "PutBackInventory", item })}
-            />
+            <Emoji key={item} item={item} onClick={() => putBackInventory(item)} />
           ))}
         </div>
         <div className={styles.vertical}>
@@ -77,20 +66,14 @@ export default () => {
             <Emoji
               item={coffin}
               enabled={!insideTheRoom}
-              onClick={
-                coffinOpened
-                  ? () => dispatch({ type: "CloseTheCoffin" })
-                  : () => dispatch({ type: "OpenTheCoffin" })
-              }
+              onClick={coffinOpened ? closeTheCoffin : openTheCoffin}
             />
             coffin
             {coffinOpened && !isKeyInInventory && (
               <Emoji
                 item={key}
                 onClick={
-                  isKeyInInventory
-                    ? () => dispatch({ type: "PutBackInventory", item: key })
-                    : () => dispatch({ type: "PickUpInventory", item: key })
+                  isKeyInInventory ? () => putBackInventory(key) : () => pickUpInventory(key)
                 }
                 enabled={!insideTheRoom}
               />
@@ -101,20 +84,16 @@ export default () => {
           {insideTheRoom ? (
             <>
               <Emoji item={hurray} />
-              <Emoji item={restart} onClick={() => dispatch({ type: "RestartGame" })} />
+              <Emoji item={restart} onClick={restartGame} />
             </>
           ) : (
             <>
               <Emoji
                 item={door}
-                onClick={
-                  insideTheRoom
-                    ? () => dispatch({ type: "LeaveTheRoom" })
-                    : () => dispatch({ type: "EnterTheRoom" })
-                }
+                onClick={insideTheRoom ? leaveTheRoom : enterTheRoom}
                 enabled={isKeyInInventory}
               />
-              door
+              room
             </>
           )}
         </div>
