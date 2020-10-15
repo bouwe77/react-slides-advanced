@@ -1,8 +1,6 @@
-import React, { useState, createContext, useContext } from "react";
+import React, { useState } from "react";
 import styles from "./Context.module.css";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
-
-const CartContext = createContext();
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -18,10 +16,8 @@ function App() {
   return (
     <div className={styles.app}>
       <Router>
-        <CartContext.Provider value={{ addToCart, cart, nrOfProductsInCart }}>
-          <Header />
-          <Webshop />
-        </CartContext.Provider>
+        <Header />
+        <Webshop />
       </Router>
       <hr />
       <div className={styles.footer}> copyright &copy; shop.com</div>{" "}
@@ -29,7 +25,7 @@ function App() {
   );
 }
 
-function Webshop(props) {
+function Webshop() {
   return (
     <>
       <Switch>
@@ -70,9 +66,7 @@ function Products() {
   );
 }
 
-function Product({ name, price }) {
-  const { addToCart } = useContext(CartContext);
-
+function Product({ name, price, addToCart }) {
   return (
     <div className={styles.product}>
       <h3 className={styles["product-name"]}>{name} </h3>
@@ -82,9 +76,7 @@ function Product({ name, price }) {
   );
 }
 
-function ShoppingCartCounter() {
-  const { nrOfProductsInCart } = useContext(CartContext);
-
+function ShoppingCartCounter({ nrOfProductsInCart }) {
   return (
     <span className={styles.count}>
       🛍{nrOfProductsInCart > 0 && `(${nrOfProductsInCart})`}
@@ -92,9 +84,7 @@ function ShoppingCartCounter() {
   );
 }
 
-function ShoppingCart() {
-  const { cart } = useContext(CartContext);
-
+function ShoppingCart({ cart }) {
   return (
     <>
       <h3>Shopping Cart</h3>
