@@ -32,7 +32,8 @@ export default function App() {
 }
 
 function Calculation({ number, darkMode }) {
-  const [isLoading, result] = useCalculation(number);
+  const [isLoading, setIsLoading] = useState(false);
+  const [result, setResult] = useState(0);
 
   return (
     <>
@@ -40,24 +41,6 @@ function Calculation({ number, darkMode }) {
       <h1 style={{ color: darkMode ? "White" : "Black" }}>{result}</h1>
     </>
   );
-}
-
-function useCalculation(number) {
-  const [isLoading, setIsLoading] = useState(false);
-  const [result, setResult] = useState(0);
-
-  useEffect(() => {
-    async function callApi() {
-      setIsLoading(true);
-      const result = await doExpensiveCalculation(number);
-      setResult(result);
-      setIsLoading(false);
-    }
-
-    callApi();
-  }, [number]);
-
-  return [isLoading, result];
 }
 
 //async function callApi() {
